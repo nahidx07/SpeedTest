@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 51, 51, 51;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+body {
+  background-color: #ffffff;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: white !important;
-  margin: 0;
-  padding: 0;
+.speed-number {
+  font-variant-numeric: tabular-nums;
 }
