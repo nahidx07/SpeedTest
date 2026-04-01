@@ -1,12 +1,12 @@
-import './globals.css'; // নিশ্চিত করুন এখানে বানানে কোনো ভুল নেই
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Evozi Speedtest',
-  description: 'Check your internet speed',
+  title: "Speedtest by Evozi",
+  description: "Check your internet speed instantly",
 };
 
 export default function RootLayout({
@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
